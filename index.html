@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+  <!--======== Light/Dark theme btn ========-->
+  <div class="theme_btn flex-center">
+    <i class="uil uil-moon"></i>
+    <i class="uil uil-sun"></i>
+  </div>
+
+  <!--======== Lang Menu ========-->
+  <div class="lang_menu">
+    <h4>Change language</h4>
+    <div class="select_lang">
+      <a class="en"> <span>English</span> - <span>EN</span> </a>
+      <a class="ar"> <span>العربية</span> - <span>AR</span> </a>
+      <a class="fr"> <span>Français</span> - <span>FR</span> </a>
+    </div>
+  </div>
+
+  <!--======== Cart ========-->
+  <div class="cart">
+    <h2 data-translate="cart_title" class="cart_title">Your Cart</h2>
+    <!-- Content -->
+    <div class="cart_content"></div>
+    <!-- Total -->
+    <div class="total">
+      <div data-translate="total_title" class="total_title">Total</div>
+      <div class="total_price">$0</div>
+    </div>
+    <!-- Buy Button -->
+    <button data-translate="btn_buy" type="button" class="btn_buy">Pay Now</button>
+    <!-- Close Cart -->
+    <i class="uil uil-times" id="close_cart"></i>
+
+  </div>
+
+  <!--======== Header ========-->
+  <header>
+    <div class="nav-bar">
+      <div class="nav-left">
+        <i class="uil uil-apps nav-menu-btn"></i>
+        <a href="index.html" class="logo">Logo</a>
+      </div>
+
+      <!-- Navigation -->
+      <div class="navigation">
+        <div class="nav-items">
+          <i class="uil uil-times nav-close-btn"></i>
+          <a href="#home" data-translate="home"><i class="uil uil-home"></i> Home</a>
+          <a href="#products" data-translate="products"><i class="uil uil-shopping-bag"></i> Products</a>
+          <a href="#about" data-translate="about"><i class="uil uil-info-circle"></i> About</a>
+          <a href="#contact" data-translate="contact"><i class="uil uil-envelope"></i> Contact</a>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <!-- Lang Icon -->
+        <div class="lang_icon">
+          <div class="selected_lang">
+            <span>EN</span>
+          </div>
+        </div>
+
+        <!-- Cart Icon -->
+        <div class="shopping">
+          <i class="fa-solid fa-cart-shopping" id="cart_icon"></i>
+          <span class="quantity">0</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="scroll-indicator-container">
+      <div class="scroll-indicator-bar"></div>
+    </div>
+  </header>
+
+  <!--======== Home ========-->
+  <section class="section home" id="home">
+    <div class="quote">
+      <h1 data-translate="quote1">START YOUR DAY</h1>
+      <h1 data-translate="quote2">WITH DATES</h1>
+    </div>
+
+  </section>
+
+  <!--======== Products ========-->
+  <div class="section products" id="products">
+    <div class="container flex-center">
+      <h2 data-translate="products_section" class="section-title">Products</h2>
+      <div class="products_content">
+
+        <!-- Box 1 -->
+        <div class="product_box active_box">
+          <h2 data-translate="product_name1" class="product_name">Product 1</h2>
+          <p data-translate="product_desc1" class="product_desc">The date palm is dioecious, having separate male 
+            and female plants. They can be easily grown from 
+            seed, but only 50% of seedlings will be female and 
+            hence fruit-bearing.
+          </p>
+          <h3 class="product_price">$99</h3>
+          <button data-translate="product_cart" class="product_cart" type="button">Add To Cart</button>
+          <img class="product_img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2wFBsoAegbI1NGmMFVM9aCUwKzo3B9YIuz7DlXeXJIMgQmm8704fmKL0Kj0cfjHJ7PNPy31hkOs8TJsu5xXD8Jdjp8-ZkAzfrOEZEBhdUEwnamjMpae1NP5jAkhBK8ABWN1ZQUtqiuBINb1A-ESk6_8h4uf-9PgVdgdGqNK6g1v9Np1X6UXCC7mtPtjhe/s320/Dates%201.png" alt="">
+          <div class="product_img_shadow"></div>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="product_box">
+          <h2 data-translate="product_name2" class="product_name">Product 2</h2>
+          <p data-translate="product_desc2" class="product_desc">Date trees reach up to 30 metres (100 feet) 
+            in height, growing singly or forming a clump 
+            with several stems from a single root system. 
+            Slow-growing.
+          </p>
+          <h3 class="product_price">$88</h3>
+          <button data-translate="product_cart" class="product_cart" type="button">Add To Cart</button>
+          <img class="product_img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAh1e7dwjcYdzZzQBy2xiWohFvInkxrmOMFFgnyV3UhYZw3VERt0FkaBNqkZzkcY2UhROCz-uZzbB6J2YJng62bILz5wgM0JwOM46DA28uhB6KPWmmXD-CE0E6n0EFxBDkOmccT5qPrhJcczB61xDUnX6UEC60ERJ1v3X21LHUxhKuvS_6L9v-qAHrc9LF/s320/Dates%202.png" alt="">
+          <div class="product_img_shadow"></div>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="product_box">
+          <h2 data-translate="product_name3" class="product_name">Product 3</h2>
+          <p data-translate="product_desc3" class="product_desc">Dates are naturally wind-pollinated.</p>
+          <h3 class="product_price">$77</h3>
+          <button data-translate="product_cart" class="product_cart" type="button">Add To Cart</button>
+          <img class="product_img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZIvbCDoyjssDEY_cSZ7e0G_vvd7YaShSA4mVxX2B5YhdiojlU6iloA8TmrQtsPG0S0S_ugzg5aNMe5z6aks9G8BTczp9-fQ6HDmNRVWHmf7EyNKfLCbA5lPQk0tNfNu1q-Fd6sG8zeDwcnFe9VqG-Dp_fGzE1S96T4ko_kWWiWjxXfwLW0M1FGaSnPQrV/s320/Dates%203.png" alt="">
+          <div class="product_img_shadow"></div>
+        </div>
+
+        <!-- Box 4 -->
+        <div class="product_box">
+          <h2 data-translate="product_name4" class="product_name">Product 4</h2>
+          <p data-translate="product_desc4" class="product_desc">Dates are naturally wind-pollinated, growing singly or forming a clump 
+            with several stems from a single root system.</p>
+          <h3 class="product_price">$66</h3>
+          <button data-translate="product_cart" class="product_cart" type="button">Add To Cart</button>
+          <img class="product_img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrpD2MbsNVeBX9WVcIqU1us68lmLNa6KKRASv87TELYRWzUIwkBqzoPsDAtQmTUBvcvr6l78Wiy5ZD5ym_Y7NJNUgg3pLYIHBezMPSxnCgOhT5LGPVtq6-2Cgnqjl6p2OK6lueeuTpxCaWeClhsUGWfJSa8NTiKfI9oE6ofe85pLWEss0Bb7HX4BIgDYKg/s320/Dates%204.png" alt="">
+          <div class="product_img_shadow"></div>
+        </div>
+
+        <!-- dots & arrows Side -->
+        <div class="products_dots">
+          <ul>
+            <li class="active_dot"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--======== About ========-->
+  <div class="section about" id="about">
+    <div class="container flex-center">
+      <h2 data-translate="about_section" class="section-title">About Us</h2>
+      <div class="about-content">
+
+        <!-- Left Side -->
+        <div class="about-img">
+          <img src="Images/dates-on-plank.png" alt="image1">
+        </div>
+
+        <!-- Right Side -->
+        <div class="about-info">
+          <h3 data-translate="about_title" >Title</h3>
+          <p data-translate="about_desc" >Date trees reach up to 30 metres (100 feet) in height, growing 
+            singly or forming a clump with several stems from a single root 
+            system. Slow-growing, they can reach over 100 years of age when 
+            maintained properly.[7] The roots have pneumatodes.[11] The leaves 
+            are 4–6 m (13–20 ft) long, with spines on the petiole, and pinnate, 
+            with about 150 leaflets. The leaflets are 30 centimetres (12 inches) 
+            long and 2 cm (1 in) wide. The full span of the crown ranges from 6–10 m 
+            (20–33 ft).</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--======== Contact ========-->
+  <div class="section contact" id="contact">
+    <div class="container flex-center">
+      <h2 data-translate="contact_section" class="section-title">Contact Us</h2>
+      <div class="contact-content">
+        <div class="contact-left">
+          <ul class="contact-list">
+            <li>
+              <div>
+                <i class="fa-solid fa-phone"></i>
+                <h3 data-translate="phone" class="item-title"> Phone</h3>
+              </div>
+              <span>+212 600000000</span>
+            </li>
+
+            <li>
+              <div>
+                <i class="fa-solid fa-envelope"></i>
+                <h3 data-translate="email" class="item-title"> Email Address</h3>
+              </div>
+              <span><a href="mailto:webtwould@gmail.com">webtwould@gmail.com</a></span>
+            </li>
+
+            <li>
+              <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <h3 data-translate="address" class="item-title"> Official Address</h3>
+              </div>
+              <span>The Address</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-right">
+          <form class="contact-form">
+            <div class="first-row">
+              <input type="text" id="name" placeholder="Name" required dir="auto">
+            </div>
+
+            <div class="second-row">
+              <input type="email" id="email" placeholder="Email" required dir="auto">
+              <input type="text" id="subject" placeholder="Subject" required dir="auto">
+            </div>
+            
+            <div class="third-row">
+              <textarea name="message" id="message" rows="5" placeholder="Message" required dir="auto"></textarea>
+            </div>
+            <button data-translate="submit" class="btn" type="submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--======== Footer ========-->
+  <footer>
+    <div class="footer-container">
+
+        <a href="index.html" class="ft_logo">Logo</a>
+
+        <div class="flex-direction">
+          <div class="footer-copyright">
+            <p data-translate="rights" >© 2023 by TWoulD. All rights reserved.</p>
+          </div>
+  
+          <div class="follow">
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+    </div>
+  </footer>
+
+  <!-- Link To JS -->
+  <script src="Js/script.js"></script>
+  <script src="Js/cart.js"></script>
+
+</body>
+</html>
